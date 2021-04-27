@@ -17,8 +17,8 @@ $this->params['breadcrumbs'][] = $this->title;
             <img src="<?php echo $linha->Imagem?>" class="img-responsive" alt="<?php echo $linha->Nome?>">
             <h2><?php echo $linha->Nome?></h2>
              <p>
-                E-MAIL: <?php echo $linha->Email?><br>
-                TELEFONE: <?php echo $linha->Telefone?><br>
+                E-mail: <?php echo $linha->Email?><br>
+                Telefone: <?php echo $linha->Telefone?><br>
                 CEP: <?php echo $linha->CEP?> <br>
                 Endereço: <?php echo $linha->Endereco?><br>
                 Bairro: <?php echo $linha->Bairro?> <br>
@@ -36,3 +36,4 @@ $this->params['breadcrumbs'][] = $this->title;
       <?php endforeach; ?>
     </div>
       <hr>
+</div>
