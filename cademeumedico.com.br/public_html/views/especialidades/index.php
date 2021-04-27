@@ -25,3 +25,4 @@ $this->params['breadcrumbs'][] = $this->title;
       <?php endforeach; ?>
     </div>
       <hr>
+</div>
