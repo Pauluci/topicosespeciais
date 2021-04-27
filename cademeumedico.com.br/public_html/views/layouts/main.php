@@ -12,6 +12,7 @@ use app\assets\AppAsset;
 
 AppAsset::register($this);
 
+
 $this->registerJs('
 if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
