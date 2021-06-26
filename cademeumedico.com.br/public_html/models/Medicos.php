@@ -20,6 +20,7 @@ use Yii;
  * @property string|null $Imagem
  * @property string $criado_em
  * @property string $atualizado_em
+ * @property int $destaque
  * @property int $status
  */
 class Medicos extends \yii\db\ActiveRecord
@@ -39,7 +40,7 @@ class Medicos extends \yii\db\ActiveRecord
     {
         return [
             [['CRM', 'Nome', 'Endereco', 'Bairro', 'Email'], 'required'],
-            [['ibge', 'tem_clinica', 'status'], 'integer'],
+            [['ibge', 'tem_clinica', 'destaque', 'status'], 'integer'],
             [['criado_em', 'atualizado_em'], 'safe'],
             [['CRM'], 'string', 'max' => 18],
             [['Nome', 'Endereco', 'site', 'Imagem'], 'string', 'max' => 145],
@@ -68,6 +69,7 @@ class Medicos extends \yii\db\ActiveRecord
             'Imagem' => Yii::t('app', 'Imagem'),
             'criado_em' => Yii::t('app', 'Criado Em'),
             'atualizado_em' => Yii::t('app', 'Atualizado Em'),
+            'destaque' => Yii::t('app', 'Destaque'),
             'status' => Yii::t('app', 'Status'),
         ];
     }
