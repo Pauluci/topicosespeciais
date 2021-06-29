@@ -1,7 +1,9 @@
 <?php
 /* @var $this yii\web\View */
 use yii\helpers\Url;
+
 $this->title = "Medicos";
+$this->params['breadcrunbs'] [] = $this->title;
 
 ?>
 <div class="container">
