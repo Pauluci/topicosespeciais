@@ -45,14 +45,20 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                ['pattern' => 'sitemap', 'route' => 'sitemap', 'suffix' => '.xml'],
+                ['pattern'=>'<controller>/<id:\d+>-<title>','route'=>'<controllers>/view'],
+                ['pattern'=>'<controller>/<action><id:\d+>','route'=>'<controller>/<action>'],
+                ['pattern'=>'<controller>/<id:\d+>','route'=>'<controllers>/view'],
+                ['pattern'=>'<controller>/<action>','route'=>'<controller>/<action>'],
+                ['pattern'=>'<controller>','route'=>'<controller>'],
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];

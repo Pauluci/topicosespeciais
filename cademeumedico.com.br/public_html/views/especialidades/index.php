@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <img src="<?php echo $linha->Imagem?>" class="img-responsive" alt="<?php echo $linha->Titulo?>">
             <h2><?php echo $linha->Titulo?></h2>
             <?php echo $linha->SubTitulo?>
-            <p><a class="btn btn-primary" href="<?php echo Url::to('especialidades/view')?>" role="button">Ver Detalhes »</a></p>
+            <p><a class="btn btn-default" href="<?php echo yii\helpers\Url::toRoute(['especialidades/view', 'id' => $linha->Especialidades_id]);?>" role="button">View details »</a></p>
           </div>
           <?php if((++$key > 0)  and ($key % 3 == 0)):?>
             </div>

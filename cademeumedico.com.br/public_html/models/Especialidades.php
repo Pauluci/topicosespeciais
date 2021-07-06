@@ -57,4 +57,15 @@ class Especialidades extends \yii\db\ActiveRecord
             'status' => Yii::t('app', 'Status'),
         ];
     }
+
+         /**
+     * Gets query for [[ClinicaHasEspecialidades]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+
+    public function getClinicaHasEspecialidades()
+    {
+        return $this->hasMany(ClinicaHasEspecialidades::className(), ['Clinica_id' => 'Clinica_id']);
+    }
 }

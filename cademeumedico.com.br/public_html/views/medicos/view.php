@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h2>Dados</h2>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><?php echo $medico->CRM ?></li>
-                        <li class="list-group-item"><?php echo $medico->email ?></li>
+                        <li class="list-group-item"><?php echo $medico->Email ?></li>
                         <li class="list-group-item"><?php echo $medico->Endereco ?></li>
                     </ul>    
                 </div>
@@ -41,7 +41,6 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
     <div class="col-md-3">
-    <img src="<?=$qrCode->writeDataUri()?>" class="img-responsive">
     </div>
 </div>
 <hr>
